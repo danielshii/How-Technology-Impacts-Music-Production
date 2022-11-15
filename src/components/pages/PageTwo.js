@@ -31,13 +31,14 @@ function PageTwo(props) {
             caption="EDM Group Slander delivering a live performance to their fans."
             float="right"
           />
+
           <p>{texts.edm.p1}</p>
         </Paragraph>
       </span>
       <Paragraph header="The Synthesizer" width="100%">
+        <Ad />
         <p>{texts.edm.p2}</p>
       </Paragraph>
-      <Ad />
     </div>
   );
 }
