@@ -32,12 +32,15 @@ function PageTwo(props) {
             float="right"
           />
 
-          <p>{texts.edm.p1}</p>
+          <p>{texts.edm}</p>
         </Paragraph>
       </span>
       <Paragraph header="The Synthesizer" width="100%">
         <Ad />
-        <p>{texts.edm.p2}</p>
+        <h4>History</h4>
+        <p>{texts.synth.p1}</p>
+        <h4>The Oscillator</h4>
+        <p>{texts.synth.p2}</p>
       </Paragraph>
     </div>
   );

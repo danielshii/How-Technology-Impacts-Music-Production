@@ -4,6 +4,7 @@ import "./fonts/OldEnglish.ttf";
 import { Route, Routes, useNavigate } from "react-router-dom";
 import PageTwo from "./components/pages/PageTwo";
 import { useState } from "react";
+import PageThree from "./components/pages/PageThree";
 
 const PAGES = 3;
 
@@ -41,6 +42,7 @@ function App() {
         <Route path="/" element={<PageOne />} />
         <Route path="/1" element={<PageOne />} />
         <Route path="/2" element={<PageTwo />} />
+        <Route path="/3" element={<PageThree />} />
       </Routes>
     </div>
   );
