@@ -1,29 +1,14 @@
-import { useLayoutEffect, useRef, useState } from "react";
-
 function Image(props) {
-  const [captionWidth, setCaptionWidth] = useState(0);
-
-  const { float, image, alt } = props;
-
-  const ref = useRef(null);
-
-  useLayoutEffect(() => {
-    setCaptionWidth(ref.current.offsetWidth - 10);
-  }, []);
+  const { float, image, alt, caption } = props;
 
   return (
-    <div
-      className="image"
-      style={{
-        float: float,
-        // width: (100 * scale).toString() + "%",
-        // height: (100 * scale).toString() + "%",
-      }}
-    >
-      <img src={image} alt={alt} ref={ref} />
-      <p style={{ width: captionWidth.toString() + "px" }}>
-        <i>{props.caption}</i>
-      </p>
+    <div className="image" id={"image-" + float}>
+      <figure>
+        <img src={image} alt={alt} />
+        <figcaption>
+          <i>{caption}</i>
+        </figcaption>
+      </figure>
     </div>
   );
 }

@@ -60,6 +60,8 @@ code {
 
 .page {
   margin: 1%;
+  line-height: 1.5;
+  font-size: large;
 }
 
 .page span {
@@ -90,26 +92,47 @@ code {
 }
 
 .image-container {
-  /* display: inline-block;
-  max-width: fit-content; */
-  /* margin-right: -30%; */
+  display: inline-block;
+  overflow: auto;
 }
 
 .image {
-  margin: 1%;
+  margin: 0.5em;
+  align-items: center;
+  width: min-content;
+  /* float:left; */
 }
 
-.image img {
+#image-left {
+  float: left;
+}
+
+#image-right {
+  float: right;
+}
+
+.image figure {
+  display: inline-table;
+  width: 1%;
+  vertical-align: top;
+}
+
+.image figure > img {
+  float: left;
   border: 5px solid black;
-  display: block;
-  max-width: 100%;
-  margin-bottom: -2%;
 }
 
-.image p {
+.image figure > figcaption {
   font-size: smaller;
   text-align: center;
+}
 
-  caption-side: bottom;
-  padding-top: 10px;
+.advertisement {
+  border: 5px dashed red;
+  background-color: white;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  width: min-content;
+  text-align: center;
+  color: red;
+  float: right;
 }
