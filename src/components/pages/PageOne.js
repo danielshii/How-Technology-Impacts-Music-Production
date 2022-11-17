@@ -21,15 +21,17 @@ function PageOne() {
           caption="FL Studio in Action"
         />
       </span>
+      <Image
+        image={eq}
+        alt="EQ"
+        caption="FL Studio's Parametric EQ. Producers can drag the numbered knobs up and down to balance out the frequencies of their song."
+        float=""
+      />
       <span className="container">
         <Paragraph width="100%">
-          <Image
-            image={eq}
-            alt="EQ"
-            caption="FL Studio's Parametric EQ. Producers can drag the numbered knobs up and down to balance out the frequencies of their song."
-            float="left"
-          />
-          <p>{texts.dawsAndControllers.p2 + " " + texts.midi}</p>
+          <p className="column-p">
+            {texts.dawsAndControllers.p2 + " " + texts.midi}
+          </p>
         </Paragraph>
       </span>
     </div>

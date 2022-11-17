@@ -40,7 +40,7 @@ function PageTwo(props) {
         <h4>History</h4>
         <p>{texts.synth.p1}</p>
         <h4>The Oscillator</h4>
-        <p>{texts.synth.p2}</p>
+        <p className="column-p">{texts.synth.p2}</p>
       </Paragraph>
     </div>
   );
