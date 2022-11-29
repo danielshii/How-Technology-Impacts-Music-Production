@@ -1,9 +1,10 @@
-import bib from "../../static/ShiAnnotatedBibliography02.htm";
+import references from "../../static/ShiReferences01.htm";
 
 function PageThree() {
   return (
     <div className="bib-container">
-      <iframe src={bib}></iframe>
+     <iframe frameBorder={0} src={references}></iframe>
+      
     </div>
   );
 }

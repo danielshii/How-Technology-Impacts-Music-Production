@@ -122,6 +122,7 @@ code {
 .prev,
 .next {
   transition: all 0.3s;
+  border: 2px solid black;
   margin: 0px;
   padding: 20px;
   height: 100vh;
@@ -134,6 +135,7 @@ code {
 .prev:hover,
 .next:hover {
   transition: all 0.3s;
+  border: 2px solid white;
   background-color: black;
   color: whitesmoke;
   cursor: pointer;
@@ -155,7 +157,7 @@ code {
 }
 
 .bib-container > iframe {
-  width: 100%;
+  width: 816px;
   height: 100vh;
 }
 
