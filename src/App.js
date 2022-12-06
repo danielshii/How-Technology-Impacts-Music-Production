@@ -5,9 +5,8 @@ import { Route, Routes, useNavigate } from "react-router-dom";
 import PageTwo from "./components/pages/PageTwo";
 import { useState } from "react";
 import PageThree from "./components/pages/PageThree";
-import Conclusion from "./components/Conclusion";
 
-const PAGES = 4;
+const PAGES = 3;
 
 function App() {
   const [currentPage, setCurrentPage] = useState(1);
@@ -44,7 +43,6 @@ function App() {
         <Route path="/1" element={<PageOne />} />
         <Route path="/2" element={<PageTwo />} />
         <Route path="/3" element={<PageThree />} />
-        <Route path="/4" element={<Conclusion />} />
       </Routes>
     </div>
   );
